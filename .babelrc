@@ -1,0 +1,20 @@
+{
+  "ignore": ["node_modules"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "safari >= 7"
+          ]
+        },
+        "spec": false,
+        "loose": false,
+        "modules": false,
+        "debug": true
+      }
+    ]
+  ]
+}
