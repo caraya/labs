@@ -1,0 +1,18 @@
+{{ define "header"}}
+  {{ define "title" }}
+    {{ .Title }} &mdash; {{ .Site.Title }}
+  {{ end }}
+  {{ partial "head/css-links.html" .}}
+{{end}}
+
+This is from list template
+
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+  {{ .Content }}
+{{end}}
+
+{{ define "footer"}}
+  {{ partial "foot/footer-content.html" .}}
+  {{ partial "foot/js-link.html" .}}
+{{end}}
